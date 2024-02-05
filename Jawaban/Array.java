@@ -14,7 +14,7 @@ public class Array {
   public void printArray() {
     System.out.print("Array: ");
     for (int i = 0; nodes[i] != null; i++) {
-      System.out.print(nodes[i].getValue() + " ");
+      System.out.print(nodes[i].value + " ");
     }
     System.out.println();
   }
@@ -125,7 +125,7 @@ public class Array {
   public void reverse() {
     int left = 0;
     int right = length - 1;
-    
+
     while(left < right){
       Node temp = nodes[left];
       nodes[left] = nodes[right];
